@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <!--code fo meta tags-->  
+    <meta charset="utf-8">
+	
+	<!--code fo page title-->
+    <title>Form Builder</title>
+	
+	<!--code for stylesheets-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--code for fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" />
+	
+	<!--code for scripts-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+	
+  </head>
+  
+  <body>
+
+    <!--code for main wrapper-->
+	<div class="wrapper">
+
+		<h1>Welcome to Dynamic Form Builder</h1>
+		<br>
+		<p>You can use this interactive form builder and create forms dynamically</p>
+		<br>
+		<button class="success createNewForm" onclick=createNewForm()>Create New Form</button>
+	
+		<form class="createForm" name="newFormData" method="post" action="">
+			<fieldset>
+				<input class="formID" type="text" placeholder="Form ID" required>
+				<br>
+				<input class="formActionURL" type="text" placeholder="Form Action URL" required>
+			</fieldset>
+			<br>
+	  	</form>
+	  	<button class="success generate" onclick=generateForm()>Generate Form</button>
+
+	  	<div class="formControls">
+
+	  		<button class="primary" onclick=insertLabel()>Insert Label</button>
+	  		<button class="primary" onclick=insertTextField()>Insert Text Field</button>
+	  		<button class="primary" onclick=insertPasswordField()>Insert Password Field</button>
+	  		<button class="primary" onclick=insertSelectOptions()>Insert Select Options</button>
+	  		<button class="primary" onclick=insertRadioButton()>Insert Radio Button</button>
+	  		<button class="primary" onclick=insertFileField()>Insert File Field</button>
+	  		<button class="primary" onclick=insertButton()>Insert Button</button>
+	  		<button class="primary" onclick=insertDataList()>Insert Datalist Option</button>
+	  		<button class="primary" onclick=insertNumberField()>Insert Number Field</button>
+	  		<button class="primary">Insert Keygen Field</button>
+	  		<button class="primary" onclick=insertTextArea()>Insert Text Area</button>
+	  		<button class="primary" onclick=insertOuput()>Insert Output Field</button>
+
+	  	</div>
+
+	  	<div class="formCanvas"></div>
+	
+	</div>
+
+	<div class="footer"><span style="margin-left:20px;">Copyright &copy; 2014 - All rights reserved <a href="http://www.mubbashir10.com">Mubbashir10</a></span></div>
+  </body>
+</html>
